@@ -245,12 +245,12 @@
     "relativePath": "prefab\\webview.prefab"
   },
   "f9c13951-60ca-4579-a43f-b31f92f5f07f": {
-    "asset": 1539968295893,
+    "asset": 1542211278312,
     "meta": 1539968294999,
     "relativePath": "resources"
   },
   "21a6de57-83dc-4c77-ac81-b0081bf2758a": {
-    "asset": 1539968295012,
+    "asset": 1542211278093,
     "meta": 1539968295002,
     "relativePath": "resources\\anim"
   },
@@ -265,12 +265,12 @@
     "relativePath": "resources\\anim\\win.anim"
   },
   "ed1ef62a-93ae-4d49-b96a-0a3568168f77": {
-    "asset": 1539968295173,
+    "asset": 1542211278147,
     "meta": 1539968295019,
     "relativePath": "resources\\animation"
   },
   "84b206e7-d668-4063-95cc-6aa30a206a6a": {
-    "asset": 1539968295167,
+    "asset": 1542211278145,
     "meta": 1539968295022,
     "relativePath": "resources\\animation\\animation_lose"
   },
@@ -360,7 +360,7 @@
     "relativePath": "resources\\animation\\animation_lose\\lose_9.png"
   },
   "4809206f-f5a0-4557-aad8-941caa1616b9": {
-    "asset": 1539968295325,
+    "asset": 1542211278193,
     "meta": 1539968295173,
     "relativePath": "resources\\animation\\animation_victory"
   },
@@ -455,7 +455,7 @@
     "relativePath": "resources\\animation\\animation_victory\\victory_9.png"
   },
   "26d8557b-16e6-4aab-adb2-6db4efefaaeb": {
-    "asset": 1539968295417,
+    "asset": 1542211278205,
     "meta": 1539968295330,
     "relativePath": "resources\\chat"
   },
@@ -475,7 +475,7 @@
     "relativePath": "resources\\chat\\input.png"
   },
   "e0441038-abc8-4756-b7d8-16772fd618df": {
-    "asset": 1539968295622,
+    "asset": 1542211278217,
     "meta": 1539968295423,
     "relativePath": "resources\\font"
   },
@@ -485,7 +485,7 @@
     "relativePath": "resources\\font\\rzgf.ttf"
   },
   "342fed0a-15fa-443b-bf26-6d8f56cbabc3": {
-    "asset": 1539968295710,
+    "asset": 1542211278253,
     "meta": 1539968295629,
     "relativePath": "resources\\gamehall"
   },
@@ -555,7 +555,7 @@
     "relativePath": "resources\\gamehall\\touxiang.png"
   },
   "70cff5d1-97ff-40ce-bed0-ea3eff9cafb0": {
-    "asset": 1539968295733,
+    "asset": 1542211278262,
     "meta": 1539968295717,
     "relativePath": "resources\\login"
   },
@@ -580,7 +580,7 @@
     "relativePath": "resources\\login\\btn_weixin.png"
   },
   "6d8586ab-1cfd-420c-ba91-a3e48309f323": {
-    "asset": 1539968295886,
+    "asset": 1542211278311,
     "meta": 1539968295740,
     "relativePath": "resources\\maingame"
   },
@@ -675,7 +675,7 @@
     "relativePath": "resources\\maingame\\touxiang.png"
   },
   "51bff2e2-5c81-459e-8646-20f6d3baa792": {
-    "asset": 1539968295912,
+    "asset": 1542211278319,
     "meta": 1539968295893,
     "relativePath": "resources\\prefab"
   },
@@ -695,7 +695,7 @@
     "relativePath": "resources\\prefab\\quickPhraseItem.prefab"
   },
   "f335de5c-ebb0-4ff5-ad00-caef511fcb81": {
-    "asset": 1540029314276,
+    "asset": 1542211278328,
     "meta": 1539968295918,
     "relativePath": "scene"
   },
@@ -710,7 +710,7 @@
     "relativePath": "scene\\guessgame.fire"
   },
   "853097c2-a3f1-4e97-b8ff-68fc64b55c9d": {
-    "asset": 1539968296367,
+    "asset": 1542211278376,
     "meta": 1539968295980,
     "relativePath": "sprite"
   },
@@ -720,12 +720,12 @@
     "relativePath": "scene\\login.fire"
   },
   "48aad3c7-3f8a-4789-a89c-4cef584cc875": {
-    "asset": 1539968296104,
+    "asset": 1542211278341,
     "meta": 1539968295983,
     "relativePath": "sprite\\3rdparty"
   },
   "2bd455db-2220-407a-8cdc-d2709d9c1851": {
-    "asset": 1539968296278,
+    "asset": 1542211278347,
     "meta": 1539968296266,
     "relativePath": "sprite\\chat"
   },
@@ -745,7 +745,7 @@
     "relativePath": "sprite\\chat\\emojiCtrl.js"
   },
   "1033571c-e560-4fff-b098-b32b6c93aa44": {
-    "asset": 1539968296358,
+    "asset": 1542211278359,
     "meta": 1539968296287,
     "relativePath": "sprite\\common"
   },
@@ -770,14 +770,9 @@
     "relativePath": "sprite\\common\\UserMgr.js"
   },
   "4f55c94c-c0f8-455b-be50-4a7db9580784": {
-    "asset": 1540029314286,
+    "asset": 1542211278371,
     "meta": 1539968296367,
     "relativePath": "sprite\\controller"
-  },
-  "ab9e9f61-f460-4407-87bb-2ca28667b708": {
-    "asset": 1539968296380,
-    "meta": 1539968714472,
-    "relativePath": "sprite\\controller\\gameEndCtrl.js"
   },
   "00ba4308-7f7b-46ea-99a1-e3f6305edf9a": {
     "asset": 1539968296389,
@@ -790,12 +785,12 @@
     "relativePath": "sprite\\controller\\loginCtrl.js"
   },
   "c12d425e-6644-45fe-98f3-a152bb4299d0": {
-    "asset": 1539968296119,
+    "asset": 1542211278374,
     "meta": 1539968296114,
     "relativePath": "sprite\\GamaHall"
   },
   "a7ec1b5e-2797-4d6a-b207-963dc951caf5": {
-    "asset": 1539968296260,
+    "asset": 1542211278386,
     "meta": 1539968296126,
     "relativePath": "sprite\\Net"
   },
@@ -830,8 +825,43 @@
     "relativePath": "sprite\\controller\\gameCtrl.js"
   },
   "1f64be89-c818-43c4-bb48-d03342649533": {
-    "asset": 1540029314280,
-    "meta": 1540306992322,
+    "asset": 1542212535603,
+    "meta": 1542212535629,
     "relativePath": "scene\\gamehall.fire"
+  },
+  "829e9e49-d36e-4285-80fe-f99e38f484ee": {
+    "asset": 1542212205577,
+    "meta": 1542212205559,
+    "relativePath": "resources\\gameUI"
+  },
+  "ab9e9f61-f460-4407-87bb-2ca28667b708": {
+    "asset": 1542211961219,
+    "meta": 1542212206144,
+    "relativePath": "sprite\\controller\\gameEndCtrl.js"
+  },
+  "850d6789-bbbb-4486-8bca-bdafe1b069ee": {
+    "asset": 1480067444000,
+    "meta": 1542212208578,
+    "relativePath": "resources\\gameUI\\anniu_guanbi.png"
+  },
+  "b8cd307e-955d-4cf8-a503-ed56eb4e69cc": {
+    "asset": 1480067444000,
+    "meta": 1542212208591,
+    "relativePath": "resources\\gameUI\\btn_close_normal.png"
+  },
+  "32edacbe-9cc6-479c-a513-b449cc222872": {
+    "asset": 1480067444000,
+    "meta": 1542212208626,
+    "relativePath": "resources\\gameUI\\btn_close_pressed.png"
+  },
+  "a21f963a-c1b7-4113-b85a-3c33881e978a": {
+    "asset": 1480067444000,
+    "meta": 1542212208641,
+    "relativePath": "resources\\gameUI\\gameroom_notice_btn_b.png"
+  },
+  "fad4aa1d-452a-4f02-94ce-e9e954f73edd": {
+    "asset": 1480067444000,
+    "meta": 1542212208671,
+    "relativePath": "resources\\gameUI\\notice_btn_b.png"
   }
 }

@@ -58,8 +58,10 @@ cc.Class({
 
                 var node = new cc.Node();
                 var label = node.addComponent(cc.Label);
-                label.string = cc.js.formatStr("玩家%s 得分%s", result.userId, result.score);
-                node.parent = this.endInfoPanel;
+                if (result.userId > 0) {
+                    label.string = cc.js.formatStr("玩家%s 得分%s", result.userId, result.score);
+                    node.parent = this.endInfoPanel;
+                }
             }
         } catch (err) {
             _didIteratorError = true;

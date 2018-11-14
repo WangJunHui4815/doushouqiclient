@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_often_yel_normal",
+    "texture": "022d5525-6611-4286-a700-388b8e2b11d8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      156,
+      70
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      156,
+      70
+    ]
+  }
+}

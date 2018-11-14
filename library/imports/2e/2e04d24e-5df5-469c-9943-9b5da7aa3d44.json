@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_shop_nav_2",
+    "texture": "e3220807-579c-4b3d-add7-0db3ac0acfd4",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      155,
+      64
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      155,
+      64
+    ]
+  }
+}

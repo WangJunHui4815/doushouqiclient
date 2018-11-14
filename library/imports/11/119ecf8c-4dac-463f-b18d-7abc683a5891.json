@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_often_disabled",
+    "texture": "90772dc6-5353-4f6f-8255-197406ace619",
+    "atlas": "",
+    "rect": [
+      0,
+      1,
+      156,
+      69
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      156,
+      70
+    ]
+  }
+}

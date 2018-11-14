@@ -705,8 +705,8 @@
     "relativePath": "resources\\prefab\\userinfo.prefab"
   },
   "9c35cf98-42c9-409f-90f6-a8f8aac15ca9": {
-    "asset": 1539968295929,
-    "meta": 1539968710181,
+    "asset": 1542213165869,
+    "meta": 1542213165905,
     "relativePath": "scene\\guessgame.fire"
   },
   "853097c2-a3f1-4e97-b8ff-68fc64b55c9d": {
@@ -863,5 +863,65 @@
     "asset": 1480067444000,
     "meta": 1542212208671,
     "relativePath": "resources\\gameUI\\notice_btn_b.png"
+  },
+  "2af50dfa-4bae-49e6-8d6f-943facd7952c": {
+    "asset": 1480067444000,
+    "meta": 1542212930284,
+    "relativePath": "resources\\gameUI\\btn_shop_1.png"
+  },
+  "007da175-d1da-4b01-9bc0-ba3f05588f98": {
+    "asset": 1480067444000,
+    "meta": 1542213254523,
+    "relativePath": "resources\\gameUI\\btn_friend_red.png"
+  },
+  "552b1da8-57db-4711-abbd-6d3ecb0293db": {
+    "asset": 1480067444000,
+    "meta": 1542213254534,
+    "relativePath": "resources\\gameUI\\btn_friend_green.png"
+  },
+  "eea4e45e-11ef-4975-b0fa-d4c399d22e69": {
+    "asset": 1480067444000,
+    "meta": 1542213254563,
+    "relativePath": "resources\\gameUI\\btn_m_orange_normal.png"
+  },
+  "90772dc6-5353-4f6f-8255-197406ace619": {
+    "asset": 1480067444000,
+    "meta": 1542213254572,
+    "relativePath": "resources\\gameUI\\btn_often_disabled.png"
+  },
+  "6a0ee3aa-3969-4f60-b444-530426136e90": {
+    "asset": 1480067444000,
+    "meta": 1542213254598,
+    "relativePath": "resources\\gameUI\\btn_often_gre_pressed.png"
+  },
+  "a2ff0ed0-c903-4576-b89f-f27f3982c45c": {
+    "asset": 1480067444000,
+    "meta": 1542213254610,
+    "relativePath": "resources\\gameUI\\btn_often_gre_normal.png"
+  },
+  "101e44c6-9411-4dc4-8c5c-4fab5b7ddd6a": {
+    "asset": 1480067444000,
+    "meta": 1542213254634,
+    "relativePath": "resources\\gameUI\\btn_often_yel_pressed.png"
+  },
+  "022d5525-6611-4286-a700-388b8e2b11d8": {
+    "asset": 1480067444000,
+    "meta": 1542213254644,
+    "relativePath": "resources\\gameUI\\btn_often_yel_normal.png"
+  },
+  "58bf3754-a424-4818-8121-11920dcda05a": {
+    "asset": 1480067442000,
+    "meta": 1542213254666,
+    "relativePath": "resources\\gameUI\\btn_qiangzhuang.png"
+  },
+  "6187e3a6-1705-4ae9-94e3-e3cf9b673546": {
+    "asset": 1480067444000,
+    "meta": 1542213254676,
+    "relativePath": "resources\\gameUI\\btn_s_orange_normal.png"
+  },
+  "e3220807-579c-4b3d-add7-0db3ac0acfd4": {
+    "asset": 1480067444000,
+    "meta": 1542213254695,
+    "relativePath": "resources\\gameUI\\btn_shop_nav_2.png"
   }
 }

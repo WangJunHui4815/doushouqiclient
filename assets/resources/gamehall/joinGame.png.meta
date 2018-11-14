@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "b6de1a95-b6ce-49a8-859b-5b33f7af7775",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "joinGame": {
+      "ver": "1.0.3",
+      "uuid": "8cde20e1-e6e5-4238-a899-e4c40e2cde7c",
+      "rawTextureUuid": "b6de1a95-b6ce-49a8-859b-5b33f7af7775",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 0,
+      "width": 495,
+      "height": 133,
+      "rawWidth": 501,
+      "rawHeight": 133,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

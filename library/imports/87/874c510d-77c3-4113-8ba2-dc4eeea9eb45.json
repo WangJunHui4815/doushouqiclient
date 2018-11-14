@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "room_icon_zhuang",
+    "texture": "88e4ccc2-5253-4a3e-8c15-0f67837f2d0f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      47,
+      45
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      47,
+      45
+    ]
+  }
+}

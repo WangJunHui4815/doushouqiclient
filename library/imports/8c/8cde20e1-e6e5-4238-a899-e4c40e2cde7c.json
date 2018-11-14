@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "joinGame",
+    "texture": "b6de1a95-b6ce-49a8-859b-5b33f7af7775",
+    "atlas": "",
+    "rect": [
+      2,
+      0,
+      495,
+      133
+    ],
+    "offset": [
+      -1,
+      0
+    ],
+    "originalSize": [
+      501,
+      133
+    ]
+  }
+}

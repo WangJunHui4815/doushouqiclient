@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "jiong1",
+    "texture": "8139bdaa-5a56-4e0c-bf1c-c716702df690",
+    "atlas": "108dfa5f-f510-4df1-a909-b446dcccfc1e",
+    "rect": [
+      0,
+      147,
+      147,
+      135
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      147,
+      135
+    ],
+    "rotated": 1
+  }
+}

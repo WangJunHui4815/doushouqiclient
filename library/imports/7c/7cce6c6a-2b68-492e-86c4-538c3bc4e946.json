@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "joinRoomBg",
+    "texture": "5cc9ebf3-a279-4f9c-ac75-7e16c72f9507",
+    "atlas": "",
+    "rect": [
+      21,
+      12,
+      1009,
+      867
+    ],
+    "offset": [
+      1,
+      0.5
+    ],
+    "originalSize": [
+      1049,
+      892
+    ]
+  }
+}

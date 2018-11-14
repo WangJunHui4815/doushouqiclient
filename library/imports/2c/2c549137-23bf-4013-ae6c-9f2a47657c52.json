@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "loseBG",
+    "texture": "91343d4a-9873-4339-a12c-36007f2f5b4f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1134,
+      750
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1134,
+      750
+    ]
+  }
+}

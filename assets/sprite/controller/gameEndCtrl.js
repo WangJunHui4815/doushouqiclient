@@ -49,11 +49,8 @@ cc.Class({
         for(let result of results) {
             let node = new cc.Node()
             let label = node.addComponent(cc.Label)
-            if(result.userId > 0){
-                label.string = cc.js.formatStr("玩家%s 得分%s", result.userId, result.score)
-                node.parent = this.endInfoPanel
-            }
-            
+            label.string = cc.js.formatStr("玩家%s 得分%s", result.userId, result.score)
+            node.parent = this.endInfoPanel
         }
     }
 

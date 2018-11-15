@@ -790,6 +790,8 @@
     "endPanel": {
       "__id__": 78
     },
+    "win": null,
+    "lose": null,
     "chatPanel": {
       "__id__": 102
     },

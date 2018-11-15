@@ -705,8 +705,8 @@
     "relativePath": "resources\\prefab\\userinfo.prefab"
   },
   "9c35cf98-42c9-409f-90f6-a8f8aac15ca9": {
-    "asset": 1542213165869,
-    "meta": 1542213165905,
+    "asset": 1542299823631,
+    "meta": 1542299823669,
     "relativePath": "scene\\guessgame.fire"
   },
   "853097c2-a3f1-4e97-b8ff-68fc64b55c9d": {
@@ -814,16 +814,6 @@
     "meta": 1539968714895,
     "relativePath": "sprite\\Net\\HTTP.js"
   },
-  "4dd689c4-172c-46d5-90a5-f3bb029f3a3a": {
-    "asset": 1539968296260,
-    "meta": 1539968714898,
-    "relativePath": "sprite\\Net\\Net.js"
-  },
-  "cb48748a-9765-4a53-ad82-d2f5f798e513": {
-    "asset": 1540029314292,
-    "meta": 1540306992289,
-    "relativePath": "sprite\\controller\\gameCtrl.js"
-  },
   "1f64be89-c818-43c4-bb48-d03342649533": {
     "asset": 1542212535603,
     "meta": 1542212535629,
@@ -923,5 +913,15 @@
     "asset": 1480067444000,
     "meta": 1542213254695,
     "relativePath": "resources\\gameUI\\btn_shop_nav_2.png"
+  },
+  "4dd689c4-172c-46d5-90a5-f3bb029f3a3a": {
+    "asset": 1542298502000,
+    "meta": 1542298506785,
+    "relativePath": "sprite\\Net\\Net.js"
+  },
+  "cb48748a-9765-4a53-ad82-d2f5f798e513": {
+    "asset": 1542299431000,
+    "meta": 1542299433410,
+    "relativePath": "sprite\\controller\\gameCtrl.js"
   }
 }

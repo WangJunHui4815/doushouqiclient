@@ -18,6 +18,8 @@ cc.Class({
         getReadyBtn: cc.Button,
         gamePanel: cc.Node,
         endPanel: cc.Node,
+        win: cc.Node,
+        lose: cc.Node,
         chatPanel: cc.Node,
         userInfo: cc.Prefab,
         tips: cc.Label,
@@ -121,8 +123,23 @@ cc.Class({
     },
 
     showEndPanel: function showEndPanel(results) {
+        console.log("show  end panel 1");
         this.endPanel.active = true;
+        console.log("show  end panel 2");
         this.endPanel.getComponent(GameEndCtrl).showResult(results);
+        this.showWinAnimction();
+        console.log("show  end panel 3");
+    },
+
+    showWinAnimction: function showWinAnimction() {
+        var m_animSprite = cc.find("Canvas/endPanel/win");
+        var m_animation = m_animSprite.getComponent(cc.Animation);
+        m_animation.play(win);
+    },
+    showLoesAnimction: function showLoesAnimction() {
+        var m_animSprite = cc.find("Canvas/endPanel/lose");
+        var m_animation = m_animSprite.getComponent(cc.Animation);
+        m_animation.play(lose);
     },
 
     showChatPanel: function showChatPanel() {

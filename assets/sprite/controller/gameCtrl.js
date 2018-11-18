@@ -121,23 +121,33 @@ cc.Class({
     },
 
     showEndPanel: function (results) {
-        console.log("show  end panel 1");
+        
         this.endPanel.active = true;
-        console.log("show  end panel 2");
+        
         this.endPanel.getComponent(GameEndCtrl).showResult(results);
-        this.showWinAnimction();
-        console.log("show  end panel 3");
+        for (let res of results){
+            if(res.userId == cc.vv.userMgr.userId){
+                if(res.score > 0){
+                    this.showWinAnimction();
+                }else if(res.score < 0){
+                    this.showLoesAnimction();
+                }
+            }
+        }
+        
     },
 
     showWinAnimction: function (){
         var m_animSprite = cc.find("Canvas/endPanel/win");
+        m_animSprite.active = true;
         var m_animation = m_animSprite.getComponent(cc.Animation);
-        m_animation.play(win);
+        m_animation.play("win");
     },
     showLoesAnimction: function (){
         var m_animSprite = cc.find("Canvas/endPanel/lose");
+        m_animSprite.active = true;
         var m_animation = m_animSprite.getComponent(cc.Animation);
-        m_animation.play(lose);
+        m_animation.play("lose");
     },
 
     showChatPanel: function() {

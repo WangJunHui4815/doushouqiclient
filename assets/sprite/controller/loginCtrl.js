@@ -67,7 +67,8 @@ cc.Class({
         fn();
     },
 
-    onBtnQuickStartClicked: function () {
+    onBtnQuickStartClicked: function () 
+    {
         cc.vv.userMgr.guestAuth();
     },
 

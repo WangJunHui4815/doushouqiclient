@@ -32,6 +32,9 @@
 
 #import "cocos-analytics/CAAgent.h"
 
+
+
+
 using namespace cocos2d;
 
 @implementation AppController
@@ -123,6 +126,13 @@ Application* app = nullptr;
     if (CAAgent.isInited)
         [CAAgent onDestroy];
 }
+
++(NSString *)loginWX:(NSString *)str title:(NSString *)tit{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:tit message:str delegate:nil cancelButtonTitle:@"否" otherButtonTitles:@"是", nil];
+    [alertView show];
+    return @"hehe";
+}
+
 
 
 #pragma mark -

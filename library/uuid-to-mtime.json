@@ -715,8 +715,8 @@
     "relativePath": "sprite"
   },
   "c4cbf011-7132-4808-930a-cf3c8a2a4493": {
-    "asset": 1542613229352,
-    "meta": 1542613229361,
+    "asset": 1542621369864,
+    "meta": 1542621369869,
     "relativePath": "scene/login.fire"
   },
   "48aad3c7-3f8a-4789-a89c-4cef584cc875": {
@@ -920,8 +920,8 @@
     "relativePath": "sprite/controller/gameCtrl.js"
   },
   "bd8f5b94-f1ad-44b5-aa40-655e7a57f4cc": {
-    "asset": 1542620685669,
-    "meta": 1542620985285,
+    "asset": 1542622147659,
+    "meta": 1542622169519,
     "relativePath": "sprite/controller/loginCtrl.js"
   }
 }

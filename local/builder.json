@@ -1,5 +1,5 @@
 {
-  "actualPlatform": "wechatgame",
+  "actualPlatform": "ios",
   "apiLevel": "",
   "appABIs": [],
   "buildPath": "./build",
@@ -9,7 +9,7 @@
   "keystoreAliasPassword": "",
   "keystorePassword": "",
   "keystorePath": "",
-  "platform": "wechatgame",
+  "platform": "ios",
   "previewHeight": "720",
   "previewWidth": "1280",
   "sourceMaps": false,

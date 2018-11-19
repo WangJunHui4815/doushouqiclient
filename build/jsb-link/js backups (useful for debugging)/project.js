@@ -1011,6 +1011,11 @@ o();
 },
 onBtnQuickStartClicked: function() {
 cc.vv.userMgr.guestAuth();
+},
+onBtnWXClicked: function() {
+console.log("onBtnWXClicked 微信登录接口");
+var e = jsb.reflection.callStaticMethod("AppController", "showAd:title:", "title", "message");
+cc.log(e);
 }
 });
 cc._RF.pop();

@@ -607,3 +607,166 @@ jsb-adapter/jsb-builtin.js:3068:33
 2018-11-19T09:43:19.298Z - normal: Simulator: Destroy WebGLBuffer (2) by GC
 2018-11-19T09:43:19.299Z - normal: Simulator: Destroy WebGLBuffer (1) by GC
 2018-11-19T09:43:19.299Z - normal: Simulator: ScriptEngine::cleanup end ...
+2018-11-19T09:55:54.438Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:15421)
+    at EventEmitter.o.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:3753)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-11-19T09:56:15.200Z - normal: Start building with options : {
+  "actualPlatform": "ios",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/loveyur/Desktop/res_loveyur/doushouqiclient/build",
+  "debug": false,
+  "dest": "/Users/loveyur/Desktop/res_loveyur/doushouqiclient/build/jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": true,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.guessGame",
+  "platform": "ios",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "c4cbf011-7132-4808-930a-cf3c8a2a4493",
+    "9c35cf98-42c9-409f-90f6-a8f8aac15ca9",
+    "1f64be89-c818-43c4-bb48-d03342649533"
+  ],
+  "sourceMaps": false,
+  "startScene": "c4cbf011-7132-4808-930a-cf3c8a2a4493",
+  "template": "link",
+  "title": "guessGame",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "landscape",
+    "subContext": ""
+  },
+  "xxteaKey": "f10a706f-1c48-40",
+  "zipCompressJs": true,
+  "project": "/Users/loveyur/Desktop/res_loveyur/doushouqiclient",
+  "projectName": "guessGame",
+  "debugBuildWorker": false
+}
+2018-11-19T09:56:15.205Z - normal: Building /Users/loveyur/Desktop/res_loveyur/doushouqiclient
+2018-11-19T09:56:15.205Z - normal: Destination /Users/loveyur/Desktop/res_loveyur/doushouqiclient/build/jsb-link
+2018-11-19T09:56:15.207Z - normal: Delete /Users/loveyur/Desktop/res_loveyur/doushouqiclient/build/jsb-link/res/**/*,/Users/loveyur/Desktop/res_loveyur/doushouqiclient/build/jsb-link/src/*/
+2018-11-19T09:56:15.320Z - normal: Checked Python Version [2.7.10]
+2018-11-19T09:56:19.185Z - normal: Start building assets
+2018-11-19T09:56:19.185Z - normal: Start spawn build-worker
+2018-11-19T09:56:19.624Z - normal: Finish spawn build-worker
+2018-11-19T09:56:19.624Z - normal: Start init build-worker
+2018-11-19T09:56:21.511Z - normal: Finish init build-worker
+2018-11-19T09:56:21.511Z - normal: Start build-assets in worker
+2018-11-19T09:56:22.161Z - normal: Finish build-assets in worker
+2018-11-19T09:56:22.164Z - normal: Finish building assets
+2018-11-19T09:56:22.187Z - normal: Start building plugin scripts
+2018-11-19T09:56:22.238Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-19T09:56:22.382Z - normal: Checked Python Version [2.7.10]
+2018-11-19T09:56:23.573Z - normal: Built to "/Users/loveyur/Desktop/res_loveyur/doushouqiclient/build/jsb-link" successfully
+2018-11-19T10:09:37.648Z - normal: Start building with options : {
+  "actualPlatform": "ios",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/loveyur/Desktop/res_loveyur/doushouqiclient/build",
+  "debug": false,
+  "dest": "/Users/loveyur/Desktop/res_loveyur/doushouqiclient/build/jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": true,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.guessGame",
+  "platform": "ios",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "c4cbf011-7132-4808-930a-cf3c8a2a4493",
+    "9c35cf98-42c9-409f-90f6-a8f8aac15ca9",
+    "1f64be89-c818-43c4-bb48-d03342649533"
+  ],
+  "sourceMaps": false,
+  "startScene": "c4cbf011-7132-4808-930a-cf3c8a2a4493",
+  "template": "link",
+  "title": "guessGame",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "landscape",
+    "subContext": ""
+  },
+  "xxteaKey": "f10a706f-1c48-40",
+  "zipCompressJs": true,
+  "project": "/Users/loveyur/Desktop/res_loveyur/doushouqiclient",
+  "projectName": "guessGame",
+  "debugBuildWorker": false
+}
+2018-11-19T10:09:37.651Z - normal: Building /Users/loveyur/Desktop/res_loveyur/doushouqiclient
+2018-11-19T10:09:37.651Z - normal: Destination /Users/loveyur/Desktop/res_loveyur/doushouqiclient/build/jsb-link
+2018-11-19T10:09:37.651Z - normal: Delete /Users/loveyur/Desktop/res_loveyur/doushouqiclient/build/jsb-link/res/**/*,/Users/loveyur/Desktop/res_loveyur/doushouqiclient/build/jsb-link/src/*/
+2018-11-19T10:09:37.765Z - normal: Checked Python Version [2.7.10]
+2018-11-19T10:09:42.047Z - normal: Start building assets
+2018-11-19T10:09:42.047Z - normal: Start spawn build-worker
+2018-11-19T10:09:42.531Z - normal: Finish spawn build-worker
+2018-11-19T10:09:42.531Z - normal: Start init build-worker
+2018-11-19T10:09:44.824Z - normal: Finish init build-worker
+2018-11-19T10:09:44.825Z - normal: Start build-assets in worker
+2018-11-19T10:09:45.692Z - normal: Finish build-assets in worker
+2018-11-19T10:09:45.695Z - normal: Finish building assets
+2018-11-19T10:09:45.722Z - normal: Start building plugin scripts
+2018-11-19T10:09:45.764Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-19T10:09:45.924Z - normal: Checked Python Version [2.7.10]
+2018-11-19T10:09:47.185Z - normal: Built to "/Users/loveyur/Desktop/res_loveyur/doushouqiclient/build/jsb-link" successfully

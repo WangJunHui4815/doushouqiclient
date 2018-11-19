@@ -70,6 +70,10 @@ cc.Class({
 
     onBtnQuickStartClicked: function onBtnQuickStartClicked() {
         cc.vv.userMgr.guestAuth();
+    },
+
+    onBtnWXClicked: function onBtnWXClicked() {
+        console.log("onBtnWXClicked 微信登录接口");
     }
 
     // update (dt) {},

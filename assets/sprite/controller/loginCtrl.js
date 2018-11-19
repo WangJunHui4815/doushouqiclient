@@ -72,5 +72,10 @@ cc.Class({
         cc.vv.userMgr.guestAuth();
     },
 
+    onBtnWXClicked: function () 
+    {
+         console.log("onBtnWXClicked 微信登录接口");
+    },
+
     // update (dt) {},
 });

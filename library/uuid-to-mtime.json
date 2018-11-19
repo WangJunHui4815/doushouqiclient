@@ -919,19 +919,9 @@
     "meta": 1542611835659,
     "relativePath": "sprite/controller/gameCtrl.js"
   },
-  "395ded12-9cf7-4dc4-9f5c-d1c929783281": {
-    "asset": 1541681976431,
-    "meta": 1542612407708,
-    "relativePath": "resources/gameUI/btn_weixin_01.png"
-  },
-  "0692ac57-cea1-4792-a16d-ee99b7e3e309": {
-    "asset": 1541681977586,
-    "meta": 1542612407708,
-    "relativePath": "resources/gameUI/btn_weixin_00.png"
-  },
   "bd8f5b94-f1ad-44b5-aa40-655e7a57f4cc": {
-    "asset": 1542613159016,
-    "meta": 1542613181606,
+    "asset": 1542620610869,
+    "meta": 1542620619288,
     "relativePath": "sprite/controller/loginCtrl.js"
   }
 }

@@ -1,5 +1,8 @@
-**#import#import "WXApi.h"
-@interface WXApiManager : NSObject{** 
+#import "WXApi.h"
+
+
+@interface WXOptManager : NSObject{
+    
 }
 
 +(instancetype)sharedManager;
@@ -30,7 +33,3 @@
 
 @end
 
-作者：刘伏波Rinnsio1xy
-链接：https://www.jianshu.com/p/a571c2ac7f0a
-來源：简书
-简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。

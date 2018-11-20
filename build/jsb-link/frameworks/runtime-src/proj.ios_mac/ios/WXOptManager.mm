@@ -1,9 +1,10 @@
 #import "WXApiManager.h"
-#import "WXApiOCDelegate.h"
+#import "WXApiObject.h"
 #import "cocos2d.h"
-#import "/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/cocos/scripting/js-bindings/jswrapper/SeApi.mm"
+#import "/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/cocos/scripting/js-bindings/jswrapper/SeApi.h"
+
 #import <netdb.h>
-@implementation WXApiManager
+@implementation WXOptManager
 
 +(instancetype)sharedManager {
     static dispatch_once_t onceToken;
@@ -247,7 +248,4 @@
     return [WXApi isWXAppInstalled];
 }
 
-作者：刘伏波Rinnsio1xy
-链接：https://www.jianshu.com/p/a571c2ac7f0a
-來源：简书
-简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
+@end

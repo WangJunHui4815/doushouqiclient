@@ -38,7 +38,7 @@
 
 + (BOOL)handleOpenURL:(NSURL *)url;
 
-
+- (void)onResp:(id)resp;
 
 @end
 

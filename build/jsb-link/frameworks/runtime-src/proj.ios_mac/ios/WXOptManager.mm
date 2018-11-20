@@ -24,6 +24,8 @@
 
 -(void)onResp:(BaseResp *)resp
 {
+ 
+    
     if (resp.errCode == WXErrCode::WXSuccess)
     {
         //分享成功后回调
@@ -32,13 +34,21 @@
              NSLog(@"ios wechat onResp share success");
            // OC_CALL_SendMsgToLua(curShareType);
         //授权成功后回调
-        }else if ([resp isKindOfClass:[SendAuthResp class]])
+        }
+        else if ([resp isKindOfClass:[SendAuthResp class]])
         {
             SendAuthResp* send_auth_resp = (SendAuthResp*)resp;
             
             // cocos2dx-lua
             // OC_CALL_GetAccessTokenByCode([[send_auth_resp code] UTF8String]);
-            
+            if([send_auth_resp.state isEqualToString:@"wx_oauth_authorization_state"]){//微信授权成功
+                
+                if(send_auth_resp.errCode == 0){
+                    
+                    NSLog(@"获取code：%@", send_auth_resp.code);
+                     
+                }
+            }
             // cocos creator
             std::string _code = [[send_auth_resp code] UTF8String];
             std::string _jsFunctionString = "cc.Client.WechatPlatformManager.wechatOnRespone(\"%s\");";

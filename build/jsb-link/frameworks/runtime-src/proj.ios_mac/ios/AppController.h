@@ -33,7 +33,7 @@
 
 @property(nonatomic, readonly) RootViewController* viewController;
 
-+(NSString *)loginWX:(NSString *)str title:(NSString *)tit;
+ 
 
 
 @end

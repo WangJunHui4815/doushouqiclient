@@ -33,7 +33,7 @@
 #import "WechatAuthSDK.h"
 #import "cocos-analytics/CAAgent.h"
 
-#define WXAppId            @"wx12345678"//填上应用的AppID
+#define WXAppId            @"wxd930ea5d5a258f4f"//填上应用的AppID
 
 
 using namespace cocos2d;
@@ -80,6 +80,7 @@ Application* app = nullptr;
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
     [WXApi registerApp:WXAppId];
+ 
     //run the cocos2d-x game scene
     app->start();
     
@@ -89,16 +90,19 @@ Application* app = nullptr;
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     
+    return false;
 //    return [WXAUTH handleOpenURL:url];
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
     
+    return false;
 //    return [WXAUTH handleOpenURL:url];
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     
+    return false;
 //    return [WXAUTH handleOpenURL:url];
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -143,11 +147,7 @@ Application* app = nullptr;
         [CAAgent onDestroy];
 }
 
-+(NSString *)loginWX:(NSString *)str title:(NSString *)tit{
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:tit message:str delegate:nil cancelButtonTitle:@"否" otherButtonTitles:@"是", nil];
-    [alertView show];
-    return @"hehe";
-}
+
 
 
 

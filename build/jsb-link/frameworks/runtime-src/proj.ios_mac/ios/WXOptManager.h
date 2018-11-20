@@ -31,6 +31,13 @@
 
 +(UIImage*)scaleToSize:(CGSize)size Target:(UIImage*)target_img;
 
+ 
+//+(NSString *)login:(NSString *)str title:(NSString *)tit;
+
++ (void)sendWXAuthReq:(NSString *)str;
+
++ (BOOL)handleOpenURL:(NSURL *)url;
+
 
 
 @end

@@ -1014,8 +1014,7 @@ cc.vv.userMgr.guestAuth();
 },
 onBtnWXClicked: function() {
 console.log("onBtnWXClicked 微信登录接口");
-var e = jsb.reflection.callStaticMethod("AppController", "showAd:title:", "title", "message");
-cc.log(e);
+jsb.reflection.callStaticMethod("WXOptManager", "sendWXAuthReq:", "weixin");
 }
 });
 cc._RF.pop();

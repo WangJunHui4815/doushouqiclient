@@ -815,7 +815,7 @@
     "relativePath": "scene/gamehall.fire"
   },
   "829e9e49-d36e-4285-80fe-f99e38f484ee": {
-    "asset": 1542611217896,
+    "asset": 1542620030904,
     "meta": 1542611217893,
     "relativePath": "resources/gameUI"
   },
@@ -920,8 +920,8 @@
     "relativePath": "sprite/controller/gameCtrl.js"
   },
   "bd8f5b94-f1ad-44b5-aa40-655e7a57f4cc": {
-    "asset": 1542622147659,
-    "meta": 1542622169519,
+    "asset": 1542693855248,
+    "meta": 1542693882831,
     "relativePath": "sprite/controller/loginCtrl.js"
   }
 }

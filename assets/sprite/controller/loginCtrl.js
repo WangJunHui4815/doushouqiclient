@@ -75,8 +75,7 @@ cc.Class({
     onBtnWXClicked: function () 
     {
          console.log("onBtnWXClicked 微信登录接口");
-         let ret = jsb.reflection.callStaticMethod("AppController","showAd:title:","title","message");
-        cc.log(ret)//打印输出：hehe
+         jsb.reflection.callStaticMethod("WXOptManager", "sendWXAuthReq:","weixin");
     },
 
     // update (dt) {},

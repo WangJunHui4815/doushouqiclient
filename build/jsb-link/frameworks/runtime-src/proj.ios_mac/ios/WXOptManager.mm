@@ -248,4 +248,50 @@
     return [WXApi isWXAppInstalled];
 }
 
+//+(NSString *)login:(NSString *)str title:(NSString *)tit{
+////    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:tit message:str delegate:nil cancelButtonTitle:@"否" otherButtonTitles:@"是", nil];
+////    [alertView show];
+////    return @"hehe";
+//
+//    //构造SendAuthReq结构体
+//    if([WXApi isWXAppInstalled]){//判断用户是否已安装微信App
+//        SendAuthReq *req = [[SendAuthReq alloc] init];
+//        req.state = @"wx_oauth_authorization_state";//用于保持请求和回调的状态，授权请求或原样带回
+//        req.scope = @"snsapi_userinfo";//授权作用域：获取用户个人信息
+//        [WXApi sendReq:req];
+//    }else{
+//        NSLog(@"未安装微信应用或版本过低");
+//    }
+//
+//    return @"hehe";
+//
+//}
+
++ (void)sendWXAuthReq:(NSString *)str{
+    
+    if([WXApi isWXAppInstalled]){//判断用户是否已安装微信App
+        SendAuthReq *req = [[SendAuthReq alloc] init];
+        req.state = @"wx_oauth_authorization_state";//用于保持请求和回调的状态，授权请求或原样带回
+        req.scope = @"snsapi_userinfo";//授权作用域：获取用户个人信息
+        
+        [WXApi sendReq:req];
+    }else{
+        
+        NSLog(@"未安装微信应用或版本过低");
+    }
+}
+
++ (BOOL)handleOpenURL:(NSURL *)url{
+    
+    //处理回调
+    if([url.host isEqualToString:@"platformId=wechat"] || [url.host isEqualToString:@"oauth"]){//微信WeChat分享回调
+        
+        return [WXApi handleOpenURL:url delegate:self];
+    }else{
+        
+        return NO;
+    }
+}
+
+
 @end

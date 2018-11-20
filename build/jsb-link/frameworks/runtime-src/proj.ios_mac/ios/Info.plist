@@ -28,11 +28,13 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLIconFile</key>
-			<string>Icon-152.png</string>
+			<string>Icon-152</string>
 			<key>CFBundleURLName</key>
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
-			<array/>
+			<array>
+				<string>com.bilibili.yume100guessGame</string>
+			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>

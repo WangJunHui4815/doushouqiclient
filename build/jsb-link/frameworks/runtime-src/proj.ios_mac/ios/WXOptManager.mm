@@ -1,4 +1,4 @@
-#import "WXApiManager.h"
+#import "WXOptManager.h"
 #import "WXApiObject.h"
 #import "cocos2d.h"
 #import "/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/cocos/scripting/js-bindings/jswrapper/SeApi.h"
@@ -8,9 +8,9 @@
 
 +(instancetype)sharedManager {
     static dispatch_once_t onceToken;
-    static WXApiManager *instance;
+    static WXOptManager *instance;
     dispatch_once(&onceToken, ^{
-        instance = [[WXApiManager alloc] init];
+        instance = [[WXOptManager alloc] init];
     });
     return instance;
 }
@@ -167,7 +167,7 @@
 {
     NSString *full_img_path = [path stringByAppendingString:@"full_screenshot.png"];
     UIImage *temp_img = [UIImage imageWithContentsOfFile:full_img_path];
-    UIImage *thumbImage = [[WXApiManager sharedManager] scaleToSize:CGSizeMake(320, 320) Target:temp_img];
+    UIImage *thumbImage = [[WXOptManager sharedManager] scaleToSize:CGSizeMake(320, 320) Target:temp_img];
     // 多媒体消息中包含的图片数据对象
     WXImageObject *imageObject = [WXImageObject object];
     imageObject.imageData = [NSData dataWithContentsOfFile:full_img_path];

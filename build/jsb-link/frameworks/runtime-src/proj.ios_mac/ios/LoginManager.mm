@@ -1,8 +1,8 @@
 //
-//  LoginManager.cpp
+//  LoginManager.mm
 //  client-vitamin
 //
-//  Created by topq on 15/6/29.
+//  Created by shixc on 17/10/22.
 //
 //
 
@@ -10,17 +10,18 @@
 
 
 
-
 USING_NS_CC;
 
-LoginManager *LoginManager::m_LoginManager = nullptr;
+////王俊辉：信鸽sdk判断ios版本使用
+//#define _IPHONE80_ 80000
+
+LoginManager *LoginManager::m_LoginManager = NULL;
 
 LoginManager::LoginManager():
 m_LoginSuccessCallback(nullptr),
 m_LoginFailCallback(nullptr),
 m_LoginOutCallback(nullptr)
 {
-    
 }
 
 LoginManager::~LoginManager()
@@ -30,7 +31,7 @@ LoginManager::~LoginManager()
 
 LoginManager*  LoginManager::GetInstance()
 {
-    if (m_LoginManager == nullptr)
+    if (m_LoginManager == NULL)
     {
         m_LoginManager = new LoginManager();
     }
@@ -40,7 +41,16 @@ LoginManager*  LoginManager::GetInstance()
 
 void LoginManager::login()
 {
-    cocos2d::log("byshixc ANDROID_TENCENT_SDK setAccessType=%d",SDK_ACCESS_TYPE_UNIO + 1);
+
+#ifdef USE_SDK_LOGIN
+    ConfigLogin::getInstance()->setAccessType(SDK_ACCESS_TYPE_BILI + 1);
+    [[BLGameSdk defaultGameSdk] showLoginView];
+    m_sdkName = SDK_NAME[SDK_ACCESS_TYPE_BILI];
+    m_sdkType = SDK_ACCESS_TYPE_BILI;
+#else
+    onLoginSuccess("");
+#endif
+
 }
 
 void LoginManager::onLoginSuccess(const char* data)
@@ -48,12 +58,16 @@ void LoginManager::onLoginSuccess(const char* data)
 
 }
 
-void LoginManager::onLoginFail()
-{ 
+
+void LoginManager::logout()
+{
+    
 
 }
-void LoginManager::onLoginCancel()
+
+void LoginManager::onLoginFail()
 {
+   
 }
 
 void LoginManager::onLoginOut()
@@ -84,15 +98,28 @@ void LoginManager::onEnterBackground()
 
 void LoginManager::onEnterForeground()
 {
-
+    if ( m_LoginFailCallback)
+    {
+        m_LoginFailCallback();
+    }
 }
 
+
+ 
 
 void LoginManager::exit()
 {
-
+    
 }
-void LoginManager::logout()
+void LoginManager::onLoginCancel()
 {
-
 }
+
+
+
+
+
+
+
+
+

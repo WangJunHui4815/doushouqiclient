@@ -70,6 +70,6 @@ cc.Class({
     onBtnQuickStartClicked: function () {
         cc.vv.userMgr.guestAuth();
     },
-
+//登陆按钮事件
     // update (dt) {},
 });

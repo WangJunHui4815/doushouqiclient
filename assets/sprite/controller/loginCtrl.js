@@ -12,6 +12,12 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+
+        loginlabel:{
+            default:null,
+            type:cc.Label
+
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -20,6 +26,51 @@ cc.Class({
         cc.vv.userMgr = new UserMgr();
         cc.vv.gameNetMgr = new GameNetMgr();
         cc.vv.gameNetMgr.initHandlers();
+       //初始化anysdk用户插件设置登陆监听
+        if(cc.sys.isMobile&&cc.vv.onUserPlugin===undefined)
+        {
+            let agent=anysdk.agentManager;
+            cc.vv.onUserPlugin=agent.getUserPlugin(); 
+            cc.vv.onUserPlugin.setListener((code,msg)=>{
+                cc.log("login code"+code+msg);
+                switch(code)
+                {
+                    case anysdk.UserActionResultCode.kLoginSuccess:
+                    this.loginlabel.string="登陆成功";
+                    var id  =  cc.vv.onUserPlugin.getUserID();
+                    cc.log("登陆成功"+id);
+                    break;
+
+                    case anysdk.UserActionResultCode.kLoginFail:
+                    this.loginlabel.string="登陆失败";
+                    cc.log("登陆失败");
+                    break;
+                    case anysdk.UserActionResultCode.kLoginCancel:
+                    break;
+                    case anysdk.UserActionResultCode.kLoginNetworkError:
+                    break;
+
+                }
+
+            },this)
+            //设置获取微信用户信息监听
+            cc.vv.onUserPlugin.setListener((code,msg)=>{
+                cc.log("login code"+code+msg);
+                switch(code)
+                {
+                    case anysdk.UserActionResultCode.kGetUserInfoSuccess:
+                    this.loginlabel.string="获取用户信息成功";
+               
+                    cc.log("获取用户信息成功"+msg);
+                    break;
+                    case anysdk.UserActionResultCode.kGetUserInfoFail:
+                    this.loginlabel.string="获取用户信息失败";
+                    cc.log("获取用户信息失败");
+                    break;
+                }
+
+            },this)
+        }
     },
 
     start() {
@@ -70,6 +121,32 @@ cc.Class({
     onBtnQuickStartClicked: function () {
         cc.vv.userMgr.guestAuth();
     },
+
+    onBtnWxLoginClikced:function(data,customdata){
+        console.log("customdata"+customdata);
+        switch(customdata){
+            case "login":
+                if(cc.vv.onUserPlugin!==undefined)
+                {
+                    cc.vv.onUserPlugin.login();
+                    cc.vv.onUserPlugin.getUserInfo();
+
+                }
+                cc.log("点击微信登陆");
+            break;
+            case "share":
+            break;
+            default:
+            break;
+
+
+        }
+
+    },
+
 //登陆按钮事件
-    // update (dt) {},
+    
+
+
+
 });

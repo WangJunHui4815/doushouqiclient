@@ -123,23 +123,53 @@ cc.Class({
     },
 
     showEndPanel: function showEndPanel(results) {
-        console.log("show  end panel 1");
+
         this.endPanel.active = true;
-        console.log("show  end panel 2");
+
         this.endPanel.getComponent(GameEndCtrl).showResult(results);
-        this.showWinAnimction();
-        console.log("show  end panel 3");
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = results[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var res = _step.value;
+
+                if (res.userId == cc.vv.userMgr.userId) {
+                    if (res.score > 0) {
+                        this.showWinAnimction();
+                    } else if (res.score < 0) {
+                        this.showLoesAnimction();
+                    }
+                }
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
     },
 
     showWinAnimction: function showWinAnimction() {
         var m_animSprite = cc.find("Canvas/endPanel/win");
+        m_animSprite.active = true;
         var m_animation = m_animSprite.getComponent(cc.Animation);
-        m_animation.play(win);
+        m_animation.play("win");
     },
     showLoesAnimction: function showLoesAnimction() {
         var m_animSprite = cc.find("Canvas/endPanel/lose");
+        m_animSprite.active = true;
         var m_animation = m_animSprite.getComponent(cc.Animation);
-        m_animation.play(lose);
+        m_animation.play("lose");
     },
 
     showChatPanel: function showChatPanel() {
@@ -184,13 +214,13 @@ cc.Class({
     },
 
     initUserInfo: function initUserInfo(seatInfo) {
-        var _iteratorNormalCompletion = true;
-        var _didIteratorError = false;
-        var _iteratorError = undefined;
+        var _iteratorNormalCompletion2 = true;
+        var _didIteratorError2 = false;
+        var _iteratorError2 = undefined;
 
         try {
-            for (var _iterator = seatInfo[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                var info = _step.value;
+            for (var _iterator2 = seatInfo[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                var info = _step2.value;
 
                 var userId = info.userid;
                 if (userId > 0) {
@@ -204,16 +234,16 @@ cc.Class({
                 }
             }
         } catch (err) {
-            _didIteratorError = true;
-            _iteratorError = err;
+            _didIteratorError2 = true;
+            _iteratorError2 = err;
         } finally {
             try {
-                if (!_iteratorNormalCompletion && _iterator.return) {
-                    _iterator.return();
+                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                    _iterator2.return();
                 }
             } finally {
-                if (_didIteratorError) {
-                    throw _iteratorError;
+                if (_didIteratorError2) {
+                    throw _iteratorError2;
                 }
             }
         }

@@ -75,18 +75,21 @@ cc.Class({
         fn();
     },
 
-    onBtnQuickStartClicked: function () {
+    onBtnQuickStartClicked: function () 
+    {
         cc.vv.userMgr.guestAuth();
     },
 
-    onBtnWxLoginClikced:function(data,customdata){
-       
 
-    },
 
 //登陆按钮事件
-    
 
+    onBtnWXClicked: function () 
+    {
+         console.log("onBtnWXClicked 微信登录接口");
+         jsb.reflection.callStaticMethod("WXOptManager", "sendWXAuthReq:","weixin");
+    },
 
+    // update (dt) {},
 
 });
